@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|c:\\users\\a. yu\u015Fa\\desktop\\projeler\\mvc\\store\\storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|c:\\users\\a. yu\u015Fa\\desktop\\projeler\\mvc\\store\\storeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|c:\\users\\a. yu\u015Fa\\desktop\\projeler\\mvc\\store\\storeapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D5C0F9B-293C-43BA-A35A-50B44A7A6E1A}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StoreApp.csproj",
+              "DocumentMoniker": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\StoreApp.csproj",
+              "RelativeDocumentMoniker": "StoreApp\\StoreApp.csproj",
+              "ToolTip": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\StoreApp.csproj",
+              "RelativeToolTip": "StoreApp\\StoreApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-06T17:21:55.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\appsettings.json",
+              "RelativeDocumentMoniker": "StoreApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\appsettings.json",
+              "RelativeToolTip": "StoreApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-30T17:07:24.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "StoreApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\A. Yu\u015Fa\\Desktop\\Projeler\\MVC\\Store\\StoreApp\\appsettings.Development.json",
+              "RelativeToolTip": "StoreApp\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-30T17:07:21.549Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
