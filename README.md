@@ -15,19 +15,20 @@ This project is designed to provide a comprehensive understanding of ASP.NET Cor
 
 ## Repository Structure
 
-Here is an overview of the repository structure:
-aspnet-core-mvc/
-├── Views/
-├── Controllers/
-├── Models/
-├── wwwroot/
-│ ├── css/
-│ ├── js/
-│ ├── lib/
-├── appsettings.json
-├── Program.cs
-├── Startup.cs
-└── README.md
+This repository has the following directory structure:
+
+* **aspnet-core-mvc/**: Root directory of the project
+  * **Views/**: Contains view files.
+  * **Controllers/**: Contains controller classes.
+  * **Models/**: Contains model classes.
+  * **wwwroot/**: Contains static files (CSS, JavaScript, images, etc.).
+    * **css/**: Contains CSS files.
+    * **js/**: Contains JavaScript files.
+    * **lib/**: Contains library files.
+  * **appsettings.json**: Contains application settings.
+  * **Program.cs**: Application entry point.
+  * **Startup.cs**: Used for application configuration.
+  * **README.md**: This file.
 
 ## Usage
 
