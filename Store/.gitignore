@@ -1,0 +1,81 @@
+# Build output
+bin/
+obj/
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.config
+**/*.symbols
+**/*.nupkg
+**/*.snk
+
+# IDE-specific files
+*.suo
+*.user
+*.sln.DotSettings.user
+.vs/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Cache files
+*.cache
+
+# Backup files
+*~
+
+# Dependency managers
+**/packages/
+**/.nuget/
+
+# Database files
+*.db
+*.sqlite
+*.sql
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local configuration files
+*.local
+*.env
+
+# Test results
+**/test-results
+
+# Visual Studio Code
+.vscode/
+
+# Specific file types
+*.suo
+*.user
+*.pdb
+*.dll
+*.exe
+*.config
+*.vshost.exe
+*.publish.xml
+*.deploy.cmd
+*.pfx
+*.p12
+*.scc
+*.vspscc
+*.vssscc
+*.sccproj
+*.sln.DotSettings.user
+*.suo
+*.user
+*.vspscc
+*.vssscc
+.vs
+*.log
+*.cache
+*.tmp
+*.obj
+*.suo
+*.user
