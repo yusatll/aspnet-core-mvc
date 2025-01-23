@@ -22,6 +22,7 @@ namespace StoreApp.Areas.Admin.Controllers
             return View(model);
         }
 
+        // GET: Admin/Product/Create
         public IActionResult Create()
         {
             ViewBag.Categories = GetCategoriesSelectList();
@@ -38,12 +39,24 @@ namespace StoreApp.Areas.Admin.Controllers
                     "1");
         }
 
+        // POST: Admin/Product/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] ProductDtoForInsertion productDto)
+        public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto, IFormFile file)
         {
             if(ModelState.IsValid)
             {
+                // file operations
+                // bize dosya olarak gelecek ama bize url gerekiyor.
+                string path = Path.Combine(Directory.GetCurrentDirectory(), 
+                    "wwwroot", "images", file.FileName); // a/b/c
+
+                using (var stream = new FileStream(path, FileMode.Create)) // maliyetli işlemler using içinde tanımlanabilir. {} dışında değerler silindiği için
+                {
+                    await file.CopyToAsync(stream); // dosyayı stream'e kopyala
+                }
+
+                productDto.ImageUrl = String.Concat("/images/", file.FileName);
                 _servicemanager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
             }
@@ -59,11 +72,22 @@ namespace StoreApp.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update([FromForm]ProductDtoForUpdate product)
+        public async Task<IActionResult> Update([FromForm]ProductDtoForUpdate productDto, IFormFile file)
         {
             if (ModelState.IsValid)
             {
-                _servicemanager.ProductService.UpdateOneProduct(product);
+                // file operations
+                // bize dosya olarak gelecek ama bize url gerekiyor.
+                string path = Path.Combine(Directory.GetCurrentDirectory(), 
+                    "wwwroot", "images", file.FileName); // a/b/c
+
+                using (var stream = new FileStream(path, FileMode.Create)) // maliyetli işlemler using içinde tanımlanabilir. {} dışında değerler silindiği için
+                {
+                    await file.CopyToAsync(stream); // dosyayı stream'e kopyala
+                }
+
+                productDto.ImageUrl = String.Concat("/images/", file.FileName);
+                _servicemanager.ProductService.UpdateOneProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();
