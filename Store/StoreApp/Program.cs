@@ -1,3 +1,4 @@
+using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Contracts;
@@ -6,7 +7,9 @@ using Services.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorPages(); // Controller olmadan da Razor sayfaları kullanılabilir
 builder.Services.AddControllersWithViews(); // servis kaydı
+
 builder.Services.AddDbContext<RepositoryContext>(options =>
 {
     options.UseSqlite(builder.Configuration
@@ -21,6 +24,8 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); // ICateg
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
+builder.Services.AddSingleton<Cart>(); // AddSingleton yaparsak herkes aynı sepeti kullanacak.
 
 builder.Services.AddAutoMapper(typeof(Program));
 
@@ -41,6 +46,7 @@ app.UseEndpoints(endpoints =>
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"
     );
+    endpoints.MapRazorPages();
 });
 
 
